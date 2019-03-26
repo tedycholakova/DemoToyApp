@@ -43,11 +43,7 @@
             </tr>
           </thead>
           <tbody>
-<<<<<<< HEAD
             <tr *ngFor='let product of products'>
-=======
-            <tr *ngFor='let product of products | async'>
->>>>>>> e1d4cdfb6eced398f889d5e1a401153dadfca160
               <td><img *ngIf = 'showImage'
                        [src]='product.imageUrl'
                        [title] = 'product.productName'

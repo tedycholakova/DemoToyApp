@@ -21,7 +21,7 @@
       "productName": "Spiderman",
       "price": "20",
       "description": "nice toy",
-      "imageUrl": "./src/assets/images/boy/spiderman.jpg"
+      "imageUrl": "https://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/tf/8/42269878-1-tf.jpg"
     },
     {
       "id": "",
@@ -29,14 +29,14 @@
       "productName": "Barbie",
       "price": "20",
       "description": "nice toy",
-      "imageUrl": "./src/assets/images/girl/barbie.jpg"
+      "imageUrl": "https://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/tf/8/42269878-1-tf.jpg"
     },
     {
       "productType": "Boy",
       "productName": "bobo",
       "price": "10",
       "description": "asasa",
-      "imageUrl": "",
+      "imageUrl": "https://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/tf/8/42269878-1-tf.jpg",
       "id": "TGT_u8V"
     },
     {
@@ -44,8 +44,16 @@
       "productName": "bobo",
       "price": "3",
       "description": "fefe",
-      "imageUrl": "",
+      "imageUrl": "https://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/tf/8/42269878-1-tf.jpg",
       "id": "qkpRJQA"
+    },
+    {
+      "productType": "Baby",
+      "productName": "drunn",
+      "price": "10",
+      "description": "fsfesf",
+      "imageUrl": "https://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/tf/8/42269878-1-tf.jpg",
+      "id": "MNtUjGL"
     }
   ]
 }
