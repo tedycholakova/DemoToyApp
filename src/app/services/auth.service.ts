@@ -43,6 +43,11 @@ export class AuthService {
         this.router.navigate(['']);
      }
 
+<<<<<<< HEAD
+=======
+   
+
+>>>>>>> e1d4cdfb6eced398f889d5e1a401153dadfca160
     isLoggedIn() {
         return sessionStorage.getItem('logged') != null
     }
