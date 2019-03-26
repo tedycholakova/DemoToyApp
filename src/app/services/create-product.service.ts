@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
-import {} from '../components/models/product.model'
+import { ProductModel } from '../components/models/product.model'
 
 @Injectable({
   providedIn: 'root'
@@ -13,10 +13,31 @@ export class CreateProductService {
 
   private productUrl = 'http://localhost:3001/products/';
 
-  constructor(private http: HttpClient, 
-              private router: Router) { }
+  constructor(private http: HttpClient,
+    private router: Router) { }
 
   createProduct(body) {
-    return this.http.post(this.productUrl,body);
+    // console.log(body);
+    return this.http.post(this.productUrl, body);
+    
   }
-}
+
+  getProducts() {
+    this.http.get(this.productUrl)
+      .subscribe((data: ProductModel) => {
+        console.log(data);
+      })
+      
+      //   const products: ProductModel[] = [];
+
+      //   products.push(new ProductModel(data.productType,
+      //     data.productName,
+      //     data.price,
+      //     data.description,
+      //     data.imageUrl));
+      //   return products;
+      // })
+    }
+  
+    
+  }

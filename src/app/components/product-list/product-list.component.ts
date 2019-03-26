@@ -3,6 +3,7 @@ import { ProductModel } from '../models/product.model';
 import { AuthService } from '../../services/auth.service';
 import { HttpClient } from 'selenium-webdriver/http';
 import { Router } from '@angular/router';
+import { CreateProductService } from 'src/app/services/create-product.service';
 
 @Component({
   selector: 'app-product-list',
@@ -51,7 +52,7 @@ export class ProductListComponent implements OnInit {
       }
 ];
   
-  constructor(private authService : AuthService, private router: Router) { 
+  constructor(private productService : CreateProductService, private router: Router) { 
     this.filteredProducts = this.products;
     this.listFilter = '';
   }
@@ -70,6 +71,7 @@ export class ProductListComponent implements OnInit {
     this.router.navigate(['/create']);
   }
   ngOnInit() {
-    this.authService.getProducts();
+    
+    this.productService.getProducts();
   }
 }

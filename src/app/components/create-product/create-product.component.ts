@@ -31,7 +31,8 @@ export class CreateProductComponent implements OnInit {
       description: this.product.description,
       imageUrl: this.product.imageUrl
     }
-    this.createProductService.createProduct(body).subscribe((data) => {
+    this.createProductService.createProduct(body)
+      .subscribe((data) => {
       this.product = new ProductModel(data['productType'],data['productName'],
                   data['productPrice'],data['productDescription'],data['productImg']);
     })
