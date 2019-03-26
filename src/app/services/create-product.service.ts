@@ -25,4 +25,8 @@ export class CreateProductService {
   getProducts() {
     return this.http.get<Observable<ProductModel[]>>(this.productUrl);
     }
+    
+    deleteProduct(id) {
+      return this.http.delete(`${this.productUrl}${id}`);
+    }
   }
