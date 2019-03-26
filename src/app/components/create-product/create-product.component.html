@@ -1,0 +1,76 @@
+<div class='card'>
+  <div class='card-header'>
+    {{pageTitle}}
+  </div>
+  <div class="container">
+    <h1>Toy Form</h1>
+    
+    <form #f="ngForm" (ngSubmit)="createProductFunc()" novalidate>
+
+      <div class="form-content">
+        <label for="productType">Product Type</label>
+        <input 
+          type="text" 
+          class="form-control" 
+          id="productType" 
+          placeholder="e.g. Boy/Girl/Baby"
+          name="productType"
+          [(ngModel)]="product.productType"
+          required>
+      </div>
+
+      <div class="form-content">
+        <label for="productName">Product name</label>
+        <input 
+          type="text" 
+          class="form-control" 
+          id="productName" 
+          placeholder="e.g. Barbie" 
+          name="productName"
+          [(ngModel)]="product.productName"
+          required>
+      </div>
+
+      <div class="form-content">
+        <label for="productPrice">Product price</label>
+        <input 
+          type="text" 
+          class="form-control" 
+          id="productPrice" 
+          placeholder="e.g. $20" 
+          name="price"
+          [(ngModel)]="product.price"
+          required>
+      </div>
+
+      <div class="form-content">
+        <label for="productDescription">Product Description</label>
+        <input 
+          type="text" 
+          class="form-control" 
+          id="productDescription" 
+          placeholder="Describe your toy" 
+          name="productDescription"
+          [(ngModel)]="product.description"
+          required>
+      </div>
+
+      <div class="form-content">
+        <label for="productImg">Product Image (optional)</label>
+        <input 
+          type="text" 
+          class="form-control" 
+          id="productImg" 
+          placeholder="Url of image"
+          name="productImg"
+          [(ngModel)]="product.imageUrl">
+      </div>
+
+      <button type="submit" value="Create" class="btn btn-success" [routerLink]="['/products']">Create</button>
+      <button class="btn btn-primary" [routerLink]="['/products']">Back</button>
+
+    </form>
+  </div>
+
+
+</div>

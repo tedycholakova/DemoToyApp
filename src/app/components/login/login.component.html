@@ -1,0 +1,46 @@
+{{ loginModel | json }}
+<section>
+	<form 
+		#f="ngForm" 
+		(ngSubmit)="loginFunc(f)">
+		<div class="login-page animate">
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4">
+					<img src="../../../assets/images/flat-avatar.png" 
+						 class="user-avatar" />
+					<h1>Log In</h1>
+					<div class="form-content">
+						<input 
+							type="text" 
+							class="form-control input-underline input-lg" 
+							id="username"
+							placeholder="Username" 
+							name="username" 
+							required 
+							[(ngModel)]="loginModel.username"/>
+						<input 
+							type="password" 
+							class="form-control input-underline input-lg" 
+							id="password"
+							placeholder="Password" 
+							name="password" 
+							required 
+							[(ngModel)]="loginModel.password"/>
+					</div>
+					<input 
+					type="submit" 
+					value="Login" 
+					class="btn btn-primary"/>
+				</div>
+			</div>
+		</div>
+	</form>
+</section>
+
+<!-- <h2>Login</h2>
+
+<form #f = "ngForm" (ngSubmit) = "loginFunc(f)" novalidate>
+	<input type="text" name="username" id="username" [(ngModel)] = "username"/>
+	<input type="text" name="password" id="password" [(ngModel)] = "password"/>
+	<input type="submit" value="submit"/>
+</form> -->

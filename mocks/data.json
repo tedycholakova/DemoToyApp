@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "pesho",
+      "password": "123456"
+    },
+    {
+      "id": "g3Fd32c",
+      "username": "tedi",
+      "password": "tedi"
+    },
+    {
+      "id": "86H79Xv",
+      "username": "gosho",
+      "password": "123456"
+    },
+    {
+      "id": "5AcXK-4",
+      "username": "tom",
+      "password": "123456"
+    }
+  ],
+  "products": [
+    {
+      "id": "",
+      "productType": "Baby",
+      "productName": "toy 1",
+      "price": "25",
+      "description": "nice toy",
+      "imageUrl": "./src/assets/images/baby/baby-toy-1.jpg"
+    },
+    {
+      "id": "",
+      "productType": "Boy",
+      "productName": "Spiderman",
+      "price": "20",
+      "description": "nice toy",
+      "imageUrl": "./src/assets/images/boy/spiderman.jpg"
+    },
+    {
+      "id": "",
+      "productType": "Girl",
+      "productName": "Barbie",
+      "price": "20",
+      "description": "nice toy",
+      "imageUrl": "./src/assets/images/girl/barbie.jpg"
+    },
+    {
+      "productType": "Boy",
+      "productName": "bobo",
+      "price": "10",
+      "description": "asasa",
+      "imageUrl": "",
+      "id": "TGT_u8V"
+    }
+  ]
+}
