@@ -17,16 +17,14 @@ export class CreateProductService {
     private router: Router) { }
 
   createProduct(body) {
-    // console.log(body);
     return this.http.post(this.productUrl, body);
-    
   }
 
   getProducts() {
     return this.http.get<Observable<ProductModel[]>>(this.productUrl);
-    }
-    
-    deleteProduct(id) {
-      return this.http.delete(`${this.productUrl}${id}`);
-    }
   }
+
+  deleteProduct(id) {
+    return this.http.delete(`${this.productUrl}${id}`);
+  }
+}

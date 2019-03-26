@@ -15,20 +15,17 @@ export class AuthService {
 
     private userUrl = 'http://localhost:3001/users/';
 
-    constructor(private http: HttpClient, 
-                private router: Router,
-                private toastr: ToastrService) { }
+    constructor(private http: HttpClient,
+        private router: Router,
+        private toastr: ToastrService) { }
 
     login(loginModel: LoginModel) {
         this.http.get(this.userUrl + "?username=" +
             loginModel.username)
             .subscribe(data => {
-                if (data['0'].username.length > 0) {
-                    this.toastr.success('Successfully Logged In!', 'Success');
-                    this.user = data[0];
-                } else {
-                    alert('ffrfr');
-                }
+                this.toastr.success('Successfully Logged In!', 'Success');
+                this.user = data[0];
+
                 sessionStorage.setItem('logged', this.user['username']);
                 this.router.navigate(['/products']);
             })
@@ -41,7 +38,7 @@ export class AuthService {
     logout() {
         sessionStorage.clear();
         this.router.navigate(['']);
-     }
+    }
 
     isLoggedIn() {
         return sessionStorage.getItem('logged') != null
