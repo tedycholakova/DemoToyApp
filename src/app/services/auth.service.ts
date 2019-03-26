@@ -14,7 +14,6 @@ export class AuthService {
     user: string;
 
     private userUrl = 'http://localhost:3001/users/';
-    private productUrl = 'http://localhost:3001/products/';
 
     constructor(private http: HttpClient, 
                 private router: Router,
@@ -27,9 +26,8 @@ export class AuthService {
                 if (data['0'].username.length > 0) {
                     this.toastr.success('Successfully Logged In!', 'Success');
                     this.user = data[0];
-                    
                 } else {
-                    this.toastr.error("bbbb");
+                    alert('ffrfr');
                 }
                 sessionStorage.setItem('logged', this.user['username']);
                 this.router.navigate(['/products']);

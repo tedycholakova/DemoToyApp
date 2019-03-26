@@ -23,10 +23,7 @@ export class CreateProductService {
   }
 
   getProducts() {
-    this.http.get(this.productUrl)
-      .subscribe((data: ProductModel) => {
-        console.log(data);
-      })
+    return this.http.get<Observable<ProductModel[]>>(this.productUrl)
       
       //   const products: ProductModel[] = [];
 

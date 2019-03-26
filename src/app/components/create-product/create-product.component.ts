@@ -35,6 +35,7 @@ export class CreateProductComponent implements OnInit {
       .subscribe((data) => {
       this.product = new ProductModel(data['productType'],data['productName'],
                   data['productPrice'],data['productDescription'],data['productImg']);
+                  this.router.navigate(['products']);
     })
     
   }

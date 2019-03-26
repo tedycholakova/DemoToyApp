@@ -4,21 +4,6 @@
       "id": "1",
       "username": "pesho",
       "password": "123456"
-    },
-    {
-      "id": "g3Fd32c",
-      "username": "tedi",
-      "password": "tedi"
-    },
-    {
-      "id": "86H79Xv",
-      "username": "gosho",
-      "password": "123456"
-    },
-    {
-      "id": "5AcXK-4",
-      "username": "tom",
-      "password": "123456"
     }
   ],
   "products": [
@@ -28,7 +13,7 @@
       "productName": "toy 1",
       "price": "25",
       "description": "nice toy",
-      "imageUrl": "./src/assets/images/baby/baby-toy-1.jpg"
+      "imageUrl": "https://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/tf/8/42269878-1-tf.jpg"
     },
     {
       "id": "",
