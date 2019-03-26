@@ -45,21 +45,7 @@ export class AuthService {
         this.router.navigate(['']);
      }
 
-    getProducts() {
-        this.http.get(this.productUrl)
-            .subscribe((data: ProductModel) => {
-                const products: ProductModel[] = [];
-                
-                    products.push(new ProductModel(data.productType,
-                        data.productName,
-                        data.price,
-                        data.description,
-                        data.imageUrl));
-                        return products;
-            })
-            
-        this.router.navigate(['/products'])
-    }
+   
 
     isLoggedIn() {
         return sessionStorage.getItem('logged') != null
